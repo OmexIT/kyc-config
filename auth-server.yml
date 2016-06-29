@@ -16,7 +16,7 @@ security:
 # and token store
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/db_sema_kyc
+    url: jdbc:postgresql://localhost:5432/db_auth_server
     username: postgres
     password: root
     driver-class: org.postgresql.Driver
