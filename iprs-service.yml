@@ -1,0 +1,8 @@
+#======================================================
+##IPRS Configuration
+#======================================================
+iprs:
+    endPoint: http://10.1.1.5:9004/IPRSServerWCF
+    userName: SEMAMOBILE
+    password: n12Qu64
+    matchThreshold: 50
