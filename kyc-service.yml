@@ -5,8 +5,20 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.10.128:8761/eureka/
+      defaultZone: http://192.168.10.128:8761/eureka/      
       
-      
-    
-      
+#PostgreSQL    
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/db_sema_kyc
+        username: postgres
+        password: root
+        driver-class-name: org.postgresql.Driver
+
+# Hibernate
+    jpa:
+        show-sql: false
+        hibernate:
+            ddl-auto: create
+            naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
