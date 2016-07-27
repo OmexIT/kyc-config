@@ -22,3 +22,7 @@ spring:
             ddl-auto: create
             naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
         database-platform: org.hibernate.dialect.PostgreSQLDialect
+        
+        
+unbarring:
+    fixedDelay 1000
