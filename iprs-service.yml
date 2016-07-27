@@ -1,3 +1,23 @@
+server:
+  port: 8086
+  contextPath: /kyc 
+
+#PostgreSQL    
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/db_sema_kyc
+        username: postgres
+        password: root
+        driver-class-name: org.postgresql.Driver
+
+# Hibernate
+    jpa:
+        show-sql: false
+        hibernate:
+            ddl-auto: create
+            naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+
 #======================================================
 ##IPRS Configuration
 #======================================================
