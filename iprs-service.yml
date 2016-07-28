@@ -1,6 +1,11 @@
 server:
   port: 8086
   contextPath: /kyc 
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/   
 
 #PostgreSQL    
 spring:
