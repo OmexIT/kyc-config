@@ -1,0 +1,24 @@
+server:
+  port: 8087
+  contextPath: /kyc 
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/   
+
+#PostgreSQL    
+spring:
+    datasource:
+        url: jdbc:postgresql://192.168.99.1:5432/db_sema_kyc
+        username: postgres
+        password: root
+        driver-class-name: org.postgresql.Driver
+
+# Hibernate
+    jpa:
+        show-sql: false
+        hibernate:
+            ddl-auto: create-drop
+            naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
