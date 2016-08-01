@@ -1,6 +1,6 @@
 server:
   port: 8082
-  contextPath: /kyc 
+#  contextPath: /kyc 
 
 eureka:
   client:
