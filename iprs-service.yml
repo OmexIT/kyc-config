@@ -1,6 +1,5 @@
 server:
   port: 8086
-  contextPath: /iprs 
   
 eureka:
   client:
