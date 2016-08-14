@@ -1,6 +1,6 @@
 server:
   port: 8086
-  contextPath: /kyc 
+  contextPath: /iprs 
   
 eureka:
   client:
