@@ -17,7 +17,7 @@ server:
 # requests using zuul
 zuul:
   routes:
-    iprs-service: /iprs/api/v1/**
+    iprs-service: /api/v1/**
     # task-webservice: /api/task/**
     # web-portal: /**
     # user: 
