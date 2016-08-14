@@ -24,6 +24,17 @@ zuul:
       # path: /api/loggedinuser/**
       # stripPrefix: true
       # url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
+      
+# Max number of retries on the same server (excluding the first try)
+ribbon:
+    maxAutoRetries: 1
+# Max number of next servers to retry (excluding the first server)
+    MaxAutoRetriesNextServer: 2
+# Connect timeout used by Apache HttpClient
+    ConnectTimeout: 3000
+# Read timeout used by Apache HttpClient
+    ReadTimeout: 5000
+
 # Define the Eureka server that handles service registration
 eureka:
   client:
